@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="display-input-container">
+            <div id="previous-input" class="previous-input"></div>
+            <hr style="width: 100%; opacity: 0.4;">
+            <div id="display-input" class="display-input"></div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="clearInput()">C</button>
+            <button onclick="appendinput('≠')">≠</button>
+            <button onclick="appendinput('%')">%</button>
+            <button onclick="appendinput(' / ')">/</button>
+            <button onclick="appendinput('7')">7</button>
+            <button onclick="appendinput('8')">8</button>
+            <button onclick="appendinput('9')">9</button>
+            <button onclick="appendinput(' * ')">*</button>
+            <button onclick="appendinput('4')">4</button>
+            <button onclick="appendinput('5')">5</button>
+            <button onclick="appendinput('6')">6</button>
+            <button onclick="appendinput(' - ')">-</button>
+            <button onclick="appendinput('1')">1</button>
+            <button onclick="appendinput('2')">2</button>
+            <button onclick="appendinput('3')">3</button>
+            <button onclick="appendinput(' + ')">+</button>
+            <button onclick="appendinput('.')">.</button>
+            <button onclick="appendinput('0')">0</button>
+            <button onclick="backSpaceInput()"><</button>
+            <button onclick="calculate()">=</button>            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
