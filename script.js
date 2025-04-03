@@ -5,14 +5,16 @@ const previosInput = document.getElementById("previous-input")
 let pressEqualButton = false
 
 let appendinput = (symbol) => {
-    if(!pressEqualButton){
-        displayInput.textContent += symbol
-    }else{
-        displayInput.textContent = ""
-        displayInput.textContent += symbol
-        pressEqualButton = false
+    const operators = ["+", "-", "*", "/", "%", "≠"];
+    
+    if (pressEqualButton && !operators.includes(symbol.trim())) {
+        displayInput.textContent = "";
     }
+    
+    displayInput.textContent += symbol;
+    pressEqualButton = false;
 }
+
 
 let clearInput = () => {
     previosInput.textContent = ""
